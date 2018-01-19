@@ -180,9 +180,9 @@ https://www.gradient-animator.com
 }
 
 .reg-text {
-    font-size: 1.4em;
-    line-height: 1.2;
-    padding: 2% 0 2% 5%;
+    font-size: 1.4em !important;
+    line-height: 1.2 !important;
+    padding: 20vh 0 2% 5% !important;
 }
 
 .mid-float-left{
