@@ -168,9 +168,21 @@ https://www.gradient-animator.com
 .wrapper-text {
     font-family: "DINPro",'Open Sans',Arial,Helvetica Neue,sans-serif;
     color: #3e3e3e;
-    font-size: 1em;
-    margin: 0 auto;
+    margin: 15px auto 0 auto;
     width: 80%;
+    height: 100px;
+}
+
+.text-body {
+    margin: 145px 0 0 0;
+    height: auto;
+    max-width: 70%;
+}
+
+.reg-text {
+    font-size: 1.4em;
+    line-height: 1.2;
+    padding: 2% 0 2% 5%;
 }
 
 .mid-float-left{
@@ -261,7 +273,7 @@ https://www.gradient-animator.com
     top: 0;
 }
 
-.quote-float{
+.quote-float {
     font-size: 1.4em;
     position: relative;
     bottom: 40px;
