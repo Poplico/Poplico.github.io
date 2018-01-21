@@ -157,6 +157,7 @@ https://www.gradient-animator.com
     width: 100vw;
     display: table;
     overflow: hidden;
+    opacity: 0;
 }
 
 .wrapper-main-left{
@@ -171,7 +172,6 @@ https://www.gradient-animator.com
     margin: 25px auto 0 auto;
     width: 80%;
     height: 100px;
-    opacity: 0;
 }
 
 .text-body {
@@ -194,7 +194,6 @@ https://www.gradient-animator.com
     font-size: 2em;
     float: left;
     margin: 50vh 0 50vh 10px;
-    opacity: 0;
     font-weight: 300;
     font-family: "DINPro",'Open Sans',Arial,Helvetica Neue,sans-serif;
 }
@@ -212,7 +211,6 @@ https://www.gradient-animator.com
 }
 
 .wrapper-prof {
-    opacity: 0;
     display: none;
 
     vertical-align: middle;
