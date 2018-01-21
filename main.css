@@ -171,12 +171,17 @@ https://www.gradient-animator.com
     margin: 25px auto 0 auto;
     width: 80%;
     height: 100px;
+    opacity: 0;
 }
 
 .text-body {
     margin: 145px 0 0 0;
     height: auto;
     max-width: 70%;
+}
+
+.text-body p {
+    padding: 0 0 2% 0;
 }
 
 .reg-text {
