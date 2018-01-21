@@ -369,6 +369,15 @@ https://www.gradient-animator.com
     height: inherit;
     vertical-align: middle;
 }
+
+.credit {
+    padding: 0 1% 1% 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: "DINPro",'Open Sans',Arial,Helvetica Neue,sans-serif;
+    color: #908c93
+}
 /*-----------------------------*/
 
 #sean {
