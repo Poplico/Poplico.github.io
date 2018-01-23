@@ -14,5 +14,3 @@ ownership of stocks, and statistics tracking.
 
 I also have working knowledge of Racket, and Java which were learned
 as course material throughout my education.
-
-CHANGE VIEWPORT <= 540h px then new CSS FILE MOBILE
