@@ -111,6 +111,7 @@ body {
     width: 50px;
     text-align: center;
     visibility: hidden;
+    text-decoration: none;
 }
 
 .again-btn:hover {
