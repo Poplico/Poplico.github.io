@@ -3,6 +3,10 @@ body {
     font-family: "DINPro", "Helvetica", sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .wrapper-input {
     color: aquamarine;
     max-width: 1000px;
@@ -111,7 +115,6 @@ body {
     width: 50px;
     text-align: center;
     visibility: hidden;
-    text-decoration: none;
 }
 
 .again-btn:hover {
