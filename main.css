@@ -40,10 +40,10 @@ body {
     https://www.gradient-animator.com
     -Ian Forrest */
 
-    background: linear-gradient(270deg, #ffe7e7, #d4fffc);
+    background: linear-gradient(270deg, #ffe7e7, #9ce78f);
     background-size: 400% 400%;
 
-    background: linear-gradient(270deg, #ffe7e7, #d4fffc, #ffffff);
+    background: linear-gradient(270deg, #ffe7e7, #9ce78f, #ffffff);
     background-size: 600% 600%;
 
     -webkit-animation: DynamicBackground 60s ease infinite;
@@ -156,7 +156,6 @@ https://www.gradient-animator.com
     height: 100%;
     width: 100vw;
     display: table;
-    overflow: hidden;
 }
 
 .wrapper-main-left{
@@ -283,6 +282,7 @@ https://www.gradient-animator.com
     bottom: 40px;
     margin: 50vh 0 50vh 0;
 }
+
 /*________________________________________________*/
 
 .nav-drop-link {
@@ -402,3 +402,57 @@ https://www.gradient-animator.com
     position: relative;
     right: 30%;
 }
+
+/*-----------------------------*/
+
+.wrapper-box {
+    border: none;
+    font-family: "Lato", "DINPro", "Helvetica", "Arial Narrow", sans-serif;
+    font-weight: lighter;
+}
+
+#tl-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50vh;
+    width: 50vw;
+    background-color: #021C1E;
+}
+#tr-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    width: 50vw;
+    background-color: #004445;
+}
+#bl-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50vh;
+    width: 50vw;
+    background-color: #2C7873;
+}
+#br-box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50vh;
+    width: 50vw;
+    background-color: #6FB98F;
+}
+
+.box-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box-link p {
+    color: white;
+    font-size: 1.7em;
+}
+

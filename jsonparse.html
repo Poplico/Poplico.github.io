@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SeamlessMD JSON</title>
+    <link rel="shortcut icon" href="http://seanliew.me/res/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="parse.css">
+    <!--Jquery CDN call-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!--Velocity JS call. Animation package that replaces slower Jquery anims-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.1/velocity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.1/velocity.ui.min.js"></script>
+    <script>
+        function permit(evt) {
+            evt.preventDefault();
+        }
+        function jparse(evt) {
+            evt.stopPropagation();
+            evt.preventDefault();
+            var files = evt.target.files || evt.dataTransfer.files;
+            for (var i = 0, f; f = files[i]; i++) {
+                var reader = new FileReader();
+                reader.onload = (function () {
+                    return function (e) {
+                        console.log('e readAsText = ', e.target.result);
+                        console.log('e readAsText target = ', e.target);
+                        da = JSON.parse(e.target.result);
+                        document.getElementById("nop").innerText = "Name: " + da.name.given + " " + da.name.family;
+                        document.getElementById("org").innerText = "Organization: " + da.managingOrganization.display;
+                        document.getElementById("gen").innerText = "Gender: " + da.gender;
+                        document.getElementById("num").innerText = "Number of Conditions: " + da.conditions.length;
+                        for (var j = 0; j < da.conditions.length; j++) {
+                            var ul = document.getElementById("lst");
+                            var li = document.createElement("li");
+                            li.appendChild(document.createTextNode(da.conditions[j]));
+                            li.setAttribute("id", j);
+                            ul.appendChild(li);
+                        }
+                        $("#drag-area").velocity("slideUp", {duration: 1000 });
+                        $("#block").velocity("slideUp", {duration: 500 });
+                        $("#up-btn").velocity("slideUp", {duration: 500 });
+                        document.getElementById("wrapper-out").style.visibility = 'visible';
+                        document.getElementById("again-id").style.visibility = 'visible';
+
+                    }
+                })(f);
+                reader.readAsText(f);
+            }
+        }
+    </script>
+
+</head>
+<body>
+<div class="wrapper-input">
+    <div class="m-title">
+        <p class="centered-text">Parse Patient JSON</p>
+    </div>
+    <div class="wrapper-drag" id="drag-box">
+        <div class="inner-drag animcolor" id="drag-area" ondrop="jparse(event)" ondragover="permit(event)">
+            <div class="drop-text">
+                <p>Drag & Drop</p>
+            </div>
+        </div>
+        <div class="orblock" id="block">
+            <p>-- OR --</p>
+        </div>
+        <div class="place-button" id="up-btn">
+            <input id="btn-select-json" type="file" onchange="jparse(event)">
+            <label for="btn-select-json" class="animcolor">Upload</label>
+        </div>
+        <div id="wrapper-out">
+            <p class="mid">Patient Info</p>
+            <div>
+                <p id="nop"></p>
+                <p id="org"></p>
+                <p id="gen"></p>
+                <p id="num"></p>
+                <p>Conditions: </p>
+                <ul id="lst"></ul>
+            </div>
+        </div>
+        <a href="jsonparse.php">
+            <div class="again-btn" id="again-id">
+                Again
+            </div>
+        </a>
+    </div>
+</div>
+</body>
+</html>
