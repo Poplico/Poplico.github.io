@@ -178,6 +178,7 @@ https://www.gradient-animator.com
     height: auto;
     max-width: 70%;
     line-height: 1.3em;
+    font-size: 1.2em;
 }
 
 .text-body p {
@@ -377,7 +378,7 @@ https://www.gradient-animator.com
     bottom: 0;
     right: 0;
     font-family: "DINPro",'Open Sans',Arial,Helvetica Neue,sans-serif;
-    color: #908c93;
+    color: #aaa6ae;
     opacity: 0;
 }
 /*-----------------------------*/
