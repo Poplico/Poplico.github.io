@@ -14,6 +14,7 @@
         function permit(evt) {
             evt.preventDefault();
         }
+
         function jparse(evt) {
             evt.stopPropagation();
             evt.preventDefault();
@@ -43,7 +44,6 @@
 
                         document.getElementById("wrapper-out").style.visibility = 'visible';
                         document.getElementById("again-id").style.visibility = 'visible';
-
                     }
                 })(f);
                 reader.readAsText(f);
