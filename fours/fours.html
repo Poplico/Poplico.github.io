@@ -3,36 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Fours</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="squared.css">
     <!--Jquery CDN call-->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <!-- Velocity CDN Call -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.1/velocity.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.1/velocity.ui.min.js"></script>
+    <script src="forfor.js"></script>
 </head>
 <body>
 <div class="wrapper-tv">
-    <div class="wrapper-box" id="tl-box">
+    <div class="wrapper-box animcolor" id="tl-box" onclick="updateView(this.id)">
         <div class="box-link">
             <p>Home</p>
         </div>
+        <div class="box-view" id="tl-view">1</div>
     </div>
-    <div class="wrapper-box" id="tr-box">
+    <div class="wrapper-box animcolor" id="tr-box" onclick="updateView(this.id)">
         <div class="box-link">
             <p>Sports</p>
         </div>
+        <div class="box-view" id="tr-view">2</div>
     </div>
-    <div class="wrapper-box" id="bl-box">
+    <div class="wrapper-box animcolor" id="bl-box" onclick="updateView(this.id)">
         <div class="box-link">
             <p>Piano</p>
         </div>
+        <div class="box-view" id="bl-view">3</div>
     </div>
-    <div class="wrapper-box" id="br-box">
+    <div class="wrapper-box animcolor" id="br-box" onclick="updateView(this.id)">
         <div class="box-link">
             <p>Projects</p>
         </div>
+        <div class="box-view" id="br-view">4</div>
     </div>
+    <div id="closebtn" onclick="updateView(null)">x</div>
 </div>
 </body>
 </html>

@@ -152,9 +152,8 @@ https://www.gradient-animator.com
 }
 .wrapper-tv{
     position: absolute;
-    border: 1px solid lightgrey;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     display: table;
 }
 
@@ -406,55 +405,4 @@ https://www.gradient-animator.com
 }
 
 /*-----------------------------*/
-
-.wrapper-box {
-    border: none;
-    font-family: "Lato", "DINPro", "Helvetica", "Arial Narrow", sans-serif;
-    font-weight: lighter;
-}
-
-#tl-box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 50vh;
-    width: 50vw;
-    background-color: #021C1E;
-}
-#tr-box {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 50vh;
-    width: 50vw;
-    background-color: #004445;
-}
-#bl-box {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 50vh;
-    width: 50vw;
-    background-color: #2C7873;
-}
-#br-box {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 50vh;
-    width: 50vw;
-    background-color: #6FB98F;
-}
-
-.box-link {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.box-link p {
-    color: white;
-    font-size: 1.7em;
-}
 

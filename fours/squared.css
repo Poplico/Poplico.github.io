@@ -1,0 +1,84 @@
+body {
+    background-color: black;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: "Lato", "DINPro", "Helvetica", "Arial Narrow", sans-serif;
+    color: white;
+}
+
+.animcolor:hover {
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+}
+
+.wrapper-box {
+    display: flex;
+    align-items: center;
+    border: none;
+    font-weight: lighter;
+    z-index: 0;
+}
+
+#tl-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50vh;
+    width: 50vw;
+    background-color: #021C1E;
+}
+#tr-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    width: 50vw;
+    background-color: #004445;
+}
+#bl-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50vh;
+    width: 50vw;
+    background-color: #2C7873;
+}
+#br-box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50vh;
+    width: 50vw;
+    background-color: #6FB98F;
+}
+
+.box-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box-link p {
+    color: white;
+    font-size: 1.7em;
+}
+
+#closebtn {
+    display: none;
+    cursor: pointer;
+    padding: 5px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: gray;
+    opacity: 0.5;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    font-size: 1.4em;
+}
