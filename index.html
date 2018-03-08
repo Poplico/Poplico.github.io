@@ -1,77 +1,130 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Sean Liew</title>
-    <link rel="shortcut icon" href="http://seanliew.me/res/favicon.ico" type="image/x-icon">
-    <!--CSS file call-->
-    <link rel="stylesheet" href="main.css">
-    <!--Jquery CDN call-->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <!--Velocity JS call. Animation package that replaces slower Jquery anims-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.1/velocity.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.1/velocity.ui.min.js"></script>
-    <!--On Page Load-->
-    <script src="assets/js/inanimate.js"></script>
-</head>
-<body>
-<div class="cover" id="cov">
-    <div class="cover-mid">
-        <div class="cover-mid-c">
-            <p>Hi.</p>
-        </div>
-    </div>
-</div>
-<div class="wrapper-tv">
-    <!-- <div class="info-header">Bishop Allen 2016</div> -->
-    <div class="nav-drop-link noselect">
-        <a onclick="menuAnim()">=</a>
-    </div>
-    <div class="wrapper-main-left">
-        <div class="mid-float-left noselect">
-            <p>My Languages</p>
-        </div>
-    </div>
-    <div class="wrapper-prof">
-        <div class="mid-float-right noselect">
-            <div class="prof-bubble" id="se" onclick="profileLoad()">
-                <a class="bubble" href="#"><p>PHP</p><p class="visNone">--</p></a>
-            </div>
-            <div class="prof-bubble" id="ma" onclick="profileLoad()">
-                <a class="bubble" href="#"><p>JS</p><p class="visNone">JavaScript</p></a>
-            </div>
-            <div class="prof-bubble" id="de" onclick="profileLoad()">
-                <a class="bubble" href="#"><p>HTML</p><p class="visNone">CSS</p></a>
-            </div>
-            <div class="prof-bubble" id="pa" onclick="profileLoad()">
-                <a class="bubble" href="#"> <p>Java</p><p class="visNone">--</p></a>
-            </div>
-            <div class="prof-bubble" id="ja" onclick="profileLoad()">
-                <a class="bubble" href="#"><p>C</p><p class="visNone">--</p></a>
-            </div>
-
-        </div>
-        <div class="user-quote">
-            <div class="quote-float">
-                <span class="changer">I'm Sean.</span>
-                <hr>
-                Buy now!
-            </div>
-        </div>
-    </div>
-</div>
-<div class="wrapper-nav noselect">
-    <ul>
-        <li class="nav-link"><a id="abt-nav-link" href="http://www.seanliew.me/aboutme.html">aboutme</a></li>
-        <li class="nav-link"><a id="genz-nav-link" href="http://www.genzfinancial.com/gen2/index.php">proj genz</a></li>
-        <li class="nav-link"><a id="lnk-nav-link" href="https://www.linkedin.com/in/sliewatc/">linkedin</a></li>
-        <li class="nav-link"><a id="con-nav-link" href="http://www.seanliew.me/contact.html">contact</a></li>
-        <li class="nav-link"><a id="git-nav-link" href="https://github.com/sliewatc">github</a></li>
-    </ul>
-</div>
-<div class="credit">
-    <p>designed by sean liew</p>
-</div>
-<img src="">
-</body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Sean Liew</title>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">	
+			<div id="bl-main" class="bl-main">
+				<section>
+					<div class="bl-box">
+						<h2 class="bl-icon bl-icon-about">About</h2>
+					</div>
+					<div class="bl-content">
+						<h2>About Me</h2>
+						<p>I'm a Computer Science student at the University of Waterloo. I have a passion for programming and attention to detail. I'm easy going, hard working, and fun to be around. When I'm not too busy you can find me playing baseball, hockey or piano.</p>
+						<p>Check out my <a class="grow" href="myresume.pdf">Resume</a>
+						</p>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<section id="bl-work-section">
+					<div class="bl-box">
+						<h2 class="bl-icon bl-icon-works">Projects</h2>
+					</div>
+					<div class="bl-content">
+						<h2>Tidbits</h2>
+						<p>Here are some things I'm doing.</p>
+						<ul id="bl-work-items">
+							<li data-panel="panel-1"><a href="#"><img class=img-res" src="images/spot.png" /></a><p>Stalkify</p></li>
+							<li data-panel="panel-2"><a href="#"><img class=img-res" src="images/stock.jpg" /></a><p>GenZ</p></li>
+							<li data-panel="panel-3"><a href="#"><img class=img-res" src="images/sailbot.jpg" /></a><p>Sailbot</p></li>
+						</ul>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<section id="noselect">
+					<div class="bl-box" style="cursor: default !important">
+						<h2 id="namehead">SEAN LIEW</h2>
+					</div>
+				</section id>
+				<section>
+					<div class="bl-box">
+						<h2 class="bl-icon bl-icon-contact">Contact</h2>
+					</div>
+					<div class="bl-content">
+						<h2>Get in touch</h2>
+						<p>email: sean.liew@uwaterloo.ca<br>phone: 647-455-2108<br>
+							<span class="linker">
+								<a href="https://www.linkedin.com/in/sliewatc" title="LinkedIn">
+									<i class="fab fa-linkedin fa-2x"></i>
+								</a>
+								<a href="https://www.github.com/sliewatc" title="GitHub">
+									<i class="fab fa-github-square fa-2x"></i>
+								</a>
+								<a href="mailto:sean.liew@uwaterloo.ca" title="Email">
+									<i class="fas fa-envelope fa-2x"></i>
+								</a>
+							</span>
+						</p>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+				<!-- Panel items for the works -->
+				<div class="bl-panel-items" id="bl-panel-work-items">
+					<div data-panel="panel-1">
+						<div>
+							<img class=img-res" height="220px" src="images/spot.png" />
+							<h3>STALKIFY</h3>
+							<p>In Development: <br> A web app that interacts with the Spotify Web API to track each users' listening habits and history.<br>
+								<span class="linker">
+									<a href="https://github.com/sliewatc/spotify-stalker" title="GitHub">
+										<i class="fab fa-github-square fa-3x"></i>
+									</a>
+								</span>
+							</p>
+						</div>
+					</div>
+					<div data-panel="panel-2">
+						<div>
+							<img class=img-res" width="300px" src="images/stock.jpg" />
+							<h3>GENZFINANCIAL</h3>
+							<p>A web app that allows each user to buy and sell 'stocks' while tracking profits. The app utilized the now deprecated Google Finance API, and has been migrated to AlphaVantage.<br>
+								<span class="linker">
+									<a href="https://github.com/sliewatc/genz/tree/master/gen2" title="GitHub">
+										<i class="fab fa-github-square fa-3x"></i>
+									</a>
+								</span>
+							</p>
+						</div>
+					</div>
+					<div data-panel="panel-3">
+						<div>
+							<img class=img-res" height="300px" src="images/sailbot.jpg" />
+							<h3>UW-SAILBOT</h3>
+							<p>Member: <br> The Sailbot team is designing and building an autonomous sailbot that competes internationally. I am currently working on the team's website improvement and development as well as contributing to the Computer Vision code base.
+								<br>
+								<span class="linker">
+									<a href="https://www.github.com/uwsailbot" title="GitHub">
+										<i class="fab fa-github-square fa-3x"></i>
+									</a>
+								</span>
+								<br>
+								<br>
+								<a href="https://uwsailbot.com/">uwsailbot.com</a>
+							</p>
+						</div>
+					</div>
+					<nav>
+						<span class="bl-next-work">&gt; Next </span>
+						<span class="bl-icon bl-icon-close"></span>
+					</nav>
+				</div>
+			</div>
+		</div><!-- /container -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="js/boxlayout.js"></script>
+		<script>
+			$(function() {
+				Boxlayout.init();
+			});
+		</script>
+	</body>
 </html>
