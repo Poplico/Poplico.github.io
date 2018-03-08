@@ -270,6 +270,10 @@ div.bl-panel-items > div > div {
 
 /* Panel Items */
 
+div.bl-panel-items img .resize {
+
+}
+
 div.bl-panel-items,
 div.bl-panel-items > div {
 	width: 100%;
@@ -280,7 +284,7 @@ div.bl-panel-items > div {
 }
 
 div.bl-panel-items > div > div {
-	width: 60%;
+	width: 70%;
 	margin: 0 auto;
 	opacity: 1;
 	bottom: 90px;
@@ -302,6 +306,8 @@ div.bl-panel-items > div > div img {
 	float: left;
 	margin: 0 20px 20px 0;
 	max-width: 100%;
+    width: 300px !important;
+    height: auto !important;
 }
 
 div.bl-panel-items {
