@@ -50,12 +50,12 @@ a:hover {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #8d8d8d;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #636363;
 }
 
 /* Handle on hover */
@@ -309,6 +309,7 @@ div.bl-panel-items > div > div h3 {
 
 div.bl-panel-items > div > div p {
 	font-size: 1.3em;
+    line-height: 1.5em;
 }
 
 div.bl-panel-items > div > div img {
