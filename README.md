@@ -1,6 +1,5 @@
 # seanliew.me
-Website design credit to Sean Liew,
-if that wasn't clear. I am a first year student studying
+I am a first year student studying
 Computer Science at the University of Waterloo, and am 
 currently in my 1B term. Some of what I have done: 
 
